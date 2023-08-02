@@ -12,3 +12,11 @@ body {
 code {
  font-family: 'Quicksand', sans-serif;
 }
+
+text {
+  pointer-events: auto;
+}
+
+::selection {
+  background-color: #f1e7e5;
+}
