@@ -1,6 +1,6 @@
 
 .logo {
-    width: 100px;
+    width: 75px;
 }
 
 .navbar-header {
@@ -26,4 +26,13 @@
 
 .navbar-list a {
     text-decoration: none;
+    color: black;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.navbar-list a:hover {
+    color: #7b1500;
 }
