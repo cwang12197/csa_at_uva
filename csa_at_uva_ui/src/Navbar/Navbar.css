@@ -7,3 +7,19 @@
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.navbar-header nav {
+    background-color: #efefef;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
