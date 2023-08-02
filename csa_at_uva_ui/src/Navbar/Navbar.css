@@ -23,3 +23,7 @@
     list-style: none;
     align-items: center;
 }
+
+.navbar-list a {
+    text-decoration: none;
+}
