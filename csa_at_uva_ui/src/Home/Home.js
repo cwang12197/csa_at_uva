@@ -11,21 +11,25 @@ function Home() {
 
         //change translate value of layers 
         parallax_el.forEach((el) => {
-            el.style.transform = `translateX(calc(-50% + ${-xVal}px)) translateY(calc(-50% + ${-yVal}px))`;
+            let speedX = el.getAttribute('data-speedx');
+            console.log(speedX);
+
+            el.style.transform = `translateX(calc(-50% + ${-xVal * speedX}px)) translateY(calc(-50% + ${-yVal}px))`;
         }) //negative moves in opp direction of mouse
+
 
     })
     return (
         <div className="Home">
             <main>
                 <div className="vignette" />
-                <img src="main background.png" className="parallax bg-img" />
-                <div className="parallax text">
+                <img src="main background.png" data-speedx= "0.3" className="parallax bg-img" />
+                <div className="parallax text" data-speedx= "0.1">
                     <h2>Welcome to</h2>
                     <h1>CSA at UVA</h1>
                 </div>
-                <img src="mountains_back.png" className="parallax mtn" />
-                <img src="house_left.png" className="parallax house" />
+                <img src="mountains_back.png" data-speedx= "0.4" className="parallax mtn" />
+                <img src="house_left.png" data-speedx= "0.2" className="parallax house" />
 
             </main>
         </div>
