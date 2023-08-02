@@ -1,0 +1,57 @@
+main {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.bg-img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.text h2 {
+    color: black;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 0.5;
+}
+
+.text h1 {
+    color: #7b1500;
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 0.5;
+}
+
+.mtn {
+    position: absolute;
+    width: 50%;
+    top: calc(34%);
+    left: calc(75%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.house {
+    position: absolute;
+    width:50%;
+    top: calc(73%);
+    left: calc(25%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}

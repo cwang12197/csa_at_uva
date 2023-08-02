@@ -6,11 +6,15 @@
 .navbar-header {
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 9999;
+    padding: 0.9rem 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
 }
 
 .navbar-header nav {
-    background-color: #efefef;
-    max-width: 95%;
+    background: rgba(215, 215, 215, .2);
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
