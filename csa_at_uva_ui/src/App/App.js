@@ -1,6 +1,7 @@
 import Navbar from '../Navbar/Navbar';
 import Home from '../Home/Home';
 import './App.css';
+import ThisWeekInCSA from '../ThisWeekInCSA/ThisWeekInCSA';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <header className="App-header">
         <Navbar />
         <Home />
+        <ThisWeekInCSA />
       </header>
     </div>
   );
