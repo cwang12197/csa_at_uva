@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&family=Mulish:wght@200;300;400;500;600;800;900&display=swap");
+
 main {
     background-color: white;
     height: 100vh;
@@ -53,7 +54,7 @@ main {
 
 .house {
     position: absolute;
-    width:50%;
+    width: 50%;
     top: calc(73%);
     left: calc(25%);
     transform: translate(-50%, -50%);
@@ -61,9 +62,9 @@ main {
 }
 
 .parallax {
-pointer-events: none;
-transform: translate(-50%, -50%);
-transition: 0.5s cubic-bezier(.2, .49, .32, .99);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.5s cubic-bezier(.2, .49, .32, .99);
 }
 
 .vignette {
@@ -75,7 +76,7 @@ transition: 0.5s cubic-bezier(.2, .49, .32, .99);
     left: 0;
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.5));
     pointer-events: none;
-  }
+}
 
 .introduction {
     z-index: 50;
@@ -83,3 +84,31 @@ transition: 0.5s cubic-bezier(.2, .49, .32, .99);
     text-align: center;
     padding: 5%;
 }
+
+/* button {
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    display: inline-block;
+    width: fit-content;
+    padding: 16px;
+    background: #7b1500;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 16px #d3d3d3;
+    transform: scale(1.05);
+}
+
+input {
+    outline: none;
+    border: 1px solid #d3d3d3;
+    padding: 16px;
+    font-size: 1rem;
+} */
