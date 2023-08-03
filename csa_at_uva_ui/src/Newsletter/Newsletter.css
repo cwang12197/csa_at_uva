@@ -7,9 +7,25 @@
     background: rgba(240, 240, 240, 0.9);
     display: grid;
     place-items: center;
-    z-index: 1000;
-    position: relative;
-    transform: scale(1.05);
+    z-index: 1;
+    position: fixed;
+    opacity: 0; 
+    transform: scale(0.9); 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+  }
+
+  .newsletter-container.active {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(240, 240, 240, 0.9);
+    display: grid;
+    place-items: center;
+    z-index: 500;
+    position: fixed;
+    opacity: 1; /* When the 'active' class is added, the container will fade in */
+    transform: scale(1.1); /* Scale back to normal size when active */
   }
   
   .newsletter-wrapper {
@@ -21,7 +37,7 @@
   .newsletter {
     position: relative;
     border: 2px solid #dd3333;
-    padding: 32px;
+    padding: 16px;
   }
   
   .close {
@@ -57,31 +73,49 @@
     font-size: 0.9rem;
     font-weight: 600;
   }
-  
-  button {
-    display: flex;
-    align-items: center;
-    margin-top: 16px;
-  }
-  
 
-   .section {
+  section {
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Quicksand';
+    color: black;
+    margin: 5%;
+  }
+
+  button {
+    background-color: #7b1500;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 14px;
+    padding: 0px 16px;
+    margin: 1rem 0;
+  }
+  
+ button:hover {
+    background-color: #601000;
+  }
+
+  .newsletter-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletter-text h2 {
     flex: 1;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    padding: 32px;
-    background: #f3f3f3;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 0.4;
   }
   
-  .section h2 {
-    text-align: center;
+  .newsletter-text p {
+    flex: 2;
+    font-size: 20px;
+    line-height: 0.4;
   }
   
-  .section p {
-    text-align: center;
-    margin-bottom: 16px;
-  }
   
-  .section a {
-    margin: 0 auto;
-  }
