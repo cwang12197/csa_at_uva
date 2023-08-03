@@ -58,7 +58,7 @@ function Home(props) {
         <div className="Home">
             <main>
                 <img src="main background.png" data-speedx="0.08" data-speedy="0.1" data-speedz="0" className="parallax bg-img" alt="bg" />
-                <div className="parallax text" data-speedx="0.094" data-speedy="0.105" data-speedz=".13">
+                <div className="parallax text" data-speedx="0.04" data-speedy="0.05" data-speedz=".03">
                     <h2>Welcome to</h2>
                     <h1>CSA at UVA</h1>
                 </div>
