@@ -113,10 +113,13 @@ button {
     font-size: 16px;
     padding: 0px 20px;
     margin: 1rem 0;
+    box-shadow: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
-    background-color: #601000;
+    transform: scale(1.05); /* Slightly grows when hovered */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .newsletter-text {
@@ -140,9 +143,18 @@ button:hover {
 .subscribe {
     background-color: #7b1500;
     color: #fff;
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
-    padding: 2px 10px;
-    margin: 1rem 0;
+    width: 100%;
+    padding: 20px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subscribe:hover {
+    transform: scale(1.05); /* Slightly grows when hovered */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
