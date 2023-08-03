@@ -47,11 +47,9 @@ function Home() {
 
     return (
         <div className="Home">
-             {/* <div className="vignette" /> */}
             <main>
-                {/* <img src="landscape.png" data-speedx= "0.07" data-speedy= "0.1" className="bg-img" alt = "house" /> */}
-                <img src="main background.png" data-speedx= "0.08" data-speedy= "0.19" data-speedz= "0" className="parallax bg-img" alt = "bg" />
-                <div className="parallax text" data-speedx= "0.11" data-speedy= "0.14" data-speedz= ".13">
+                <img src="main background.png" data-speedx= "0.08" data-speedy= "0.1" data-speedz= "0" className="parallax bg-img" alt = "bg" />
+                <div className="parallax text" data-speedx= "0.094" data-speedy= "0.105" data-speedz= ".13">
                     <h2>Welcome to</h2>
                     <h1>CSA at UVA</h1>
                 </div>

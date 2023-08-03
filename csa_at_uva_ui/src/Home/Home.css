@@ -80,7 +80,6 @@ transition: 0.5s cubic-bezier(.2, .49, .32, .99);
 .introduction {
     z-index: 50;
     color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: 5%;
 }
