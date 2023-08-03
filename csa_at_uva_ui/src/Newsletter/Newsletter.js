@@ -54,15 +54,15 @@ function Newsletter() {
 
               <div className='newsletter-input'>
                 <label>First Name</label>
-                <input type='text' placeholder='Your Name' name='FNAME'></input>
+                <input type='text' placeholder='First Name' name='FNAME'></input>
               </div>
 
               <div className='newsletter-input'>
                 <label>Last Name</label>
-                <input type='text' placeholder='Your Name' name='LNAME'></input>
+                <input type='text' placeholder='Last Name' name='LNAME'></input>
               </div>
 
-              <button>Subscribe</button>
+              <button className = "subscribe">Subscribe</button>
             </form>
           </div>
         </div>
