@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&family=Mulish:wght@200;300;400;500;600;800;900&display=swap");
 main {
     background-color: white;
     height: 100vh;
@@ -24,20 +25,21 @@ main {
     text-transform: uppercase;
     z-index: 2;
     pointer-events: auto;
+    font-family: "Mulish", sans-serif !important;
 }
 
 .text h2 {
     color: black;
     font-weight: 500;
     font-size: 5rem;
-    line-height: 0.5;
+    line-height: 0.4;
 }
 
 .text h1 {
     color: #7b1500;
     font-weight: 800;
     font-size: 7rem;
-    line-height: 0.5;
+    line-height: 0.4;
 }
 
 .mtn {
@@ -61,7 +63,7 @@ main {
 .parallax {
 pointer-events: none;
 transform: translate(-50%, -50%);
-transition: 0.45s cubic-bezier(.2, .49, .32, .99);
+transition: 0.5s cubic-bezier(.2, .49, .32, .99);
 }
 
 .vignette {
@@ -73,4 +75,12 @@ transition: 0.45s cubic-bezier(.2, .49, .32, .99);
     left: 0;
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.5));
     pointer-events: none;
+  }
+
+.introduction {
+    z-index: 50;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

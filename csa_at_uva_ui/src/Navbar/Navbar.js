@@ -8,16 +8,16 @@ function Navbar() {
             <img src = "Official-CSA-Square-Logo.png" alt = "Official CSA Logo" className = "logo"/>
             <ul className = "navbar-list">
                 <li>
-                    <a href = "#">Home</a>
+                    <a href = "/">Home</a>
                     </li>
-                    <li> <a href = "#">Events</a></li>
-                    <li> <a href = "#">Officers</a></li>
+                    <li> <a href = "/">Events</a></li>
+                    <li> <a href = "/">Officers</a></li>
                    
-                    <li> <a href = "#">Families</a></li>
+                    <li> <a href = "/">Families</a></li>
                    
-                    <li> <a href = "#">Alumni</a></li>
+                    <li> <a href = "/">Alumni</a></li>
                    
-                    <li><a href = "#">Gallery</a></li>
+                    <li><a href = "/">Gallery</a></li>
                     
             </ul>
         </nav>

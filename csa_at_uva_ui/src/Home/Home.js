@@ -1,42 +1,67 @@
 import './Home.css';
+import React, { useState, useEffect } from "react";
 
 function Home() {
 
     const parallax_el = document.querySelectorAll(".parallax");
-    let xVal = 0, yVal = 0;
+    const [xVal, setXVal] = useState(0);
+    const [yVal, setYVal] = useState(0);
 
-    window.addEventListener("mousemove", (e) => {
-        xVal = e.clientX - window.innerWidth/2; //detect how far mouse is moving from center of screen instead of top left corner
-        yVal = e.clientY - window.innerHeight/2; 
-
-        //change translate value of layers 
-        parallax_el.forEach((el) => {
-            let speedX = el.getAttribute('data-speedx');
-            let speedY = el.getAttribute('data-speedy');
-
-            let zValue = e.clientX - parseFloat(getComputedStyle(el).left);
-
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+          setXVal(e.clientX - window.innerWidth / 2);
+          setYVal(e.clientY - window.innerHeight / 2);
+        };
+      
+        window.addEventListener("mousemove", handleMouseMove);
+      
+        return () => {
+          window.removeEventListener("mousemove", handleMouseMove);
+        };
+      }, []);
+      
+      useEffect(() => {
+        const handleParallax = () => {
+          parallax_el.forEach((el) => {
+            const speedX = el.getAttribute('data-speedx');
+            const speedY = el.getAttribute('data-speedy');
+            const speedZ = el.getAttribute('data-speedz');
+      
+            const isInLeft = parseFloat(getComputedStyle(el).left) < window.innerWidth / 2 ? 1 : -1;
+            const zValue = xVal - parseFloat(getComputedStyle(el).left) * isInLeft * 0.1;
+      
+            let translateY = -yVal * speedY;
+      
             el.style.transform = `translateX(calc(-50% + ${-xVal * speedX}px))
-            translateY(calc(-50% + ${-yVal*speedY}px)) 
-            perspective(2300px) translateZ(${zValue}px)`;
-        }) //negative moves in opp direction of mouse
+                                  translateY(calc(-50% + ${translateY}px)) 
+                                  perspective(2300px) translateZ(${ zValue * speedZ}px)`;
+          });
+        };
+      
+        window.addEventListener("mousemove", handleParallax);
+      
+        return () => {
+          window.removeEventListener("mousemove", handleParallax);
+        };
+      }, [xVal, yVal]);
 
-
-    })
     return (
         <div className="Home">
+             {/* <div className="vignette" /> */}
             <main>
-                <div className="vignette" />
-                <img src="main background.png" data-speedx= "0.23" data-speedy= "0.25" className="parallax bg-img" />
-                <div className="parallax text" data-speedx= "0.15" data-speedy= "0.16">
+                {/* <img src="landscape.png" data-speedx= "0.07" data-speedy= "0.1" className="bg-img" alt = "house" /> */}
+                <img src="main background.png" data-speedx= "0.08" data-speedy= "0.19" data-speedz= "0" className="parallax bg-img" alt = "bg" />
+                <div className="parallax text" data-speedx= "0.11" data-speedy= "0.14" data-speedz= ".13">
                     <h2>Welcome to</h2>
                     <h1>CSA at UVA</h1>
                 </div>
-                <img src="mountains_back.png" data-speedx= "0.12" data-speedy= "0.13" className="parallax mtn" />
-                <img src="house_left.png" data-speedx= "0.17" data-speedy= "0.1" className="parallax house" />
-
+                <img src="mountains_back.png" data-speedx= "0.1" data-speedy= "0.15" data-speedz= "0.18" className="parallax mtn" alt = "mtn" />
+                <img src="house_left.png" data-speedx= "0.1" data-speedy= "0.11" data-speedz= "0.22" className="parallax house" alt = "house" />
             </main>
-        </div>
+            <div className = "introduction">
+                <p>The Chinese Student Association (CSA), as one of the largest Asian-American cultural organizations on grounds, seeks to promote awareness and appreciation for traditional and modern Chinese culture within the University and greater Charlottesville community. CSA hosts an array of cultural and social events designed to reach out to and bring together both native and ethnic Chinese, as well as the non-Chinese populations of UVA, in order to share and celebrate Chinese culture.</p>
+            </div>
+            </div>
     );
 }
 
