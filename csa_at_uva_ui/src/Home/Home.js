@@ -2,7 +2,8 @@ import './Home.css';
 import React, { useState, useEffect } from "react";
 import ThisWeekInCSA from '../ThisWeekInCSA/ThisWeekInCSA';
 import Newsletter from '../Newsletter/Newsletter';
-
+import Carousel
+ from 'react-material-ui-carousel';
 function Home() {
 
     const parallax_el = document.querySelectorAll(".parallax");
@@ -61,6 +62,7 @@ function Home() {
             <div className="introduction">
                 <p>The Chinese Student Association (CSA), as one of the largest Asian-American cultural organizations on grounds, seeks to promote awareness and appreciation for traditional and modern Chinese culture within the University and greater Charlottesville community. CSA hosts an array of cultural and social events designed to reach out to and bring together both native and ethnic Chinese, as well as the non-Chinese populations of UVA, in order to share and celebrate Chinese culture.</p>
             </div>
+            <Carousel />
             <div className="member-form">
                 <button onClick={() => window.open("https://www.tinyurl.com/oldcsa")}>
                     Returning Members Form
