@@ -71,6 +71,35 @@ function Home() {
             </div>
             <Newsletter />
             <ThisWeekInCSA />
+
+            <div className='section-list'>
+                <section className='family'>
+                    <h2>See Our Families</h2>
+                    <p>Families are an integral part of CSA.</p>
+                    <a href='/families'>
+                        <button>View Families</button>
+                    </a>
+                </section>
+                <section className='officers'>
+                    <h2>Talk to Our Officers</h2>
+
+                    <p>Our officers are very cool and very nice.</p>
+
+                    <a href='/officers'>
+                        <button>View Officers</button>
+                    </a>
+                </section>
+
+                <section className='gallery'>
+                    <h2>View Our Past Events</h2>
+                    <p>
+                        See pictures and videos of our past performances and social events!
+                    </p>
+                    <a href='/gallery'>
+                        <button>View Gallery</button>
+                    </a>
+                </section>
+            </div>
         </div>
     );
 }
