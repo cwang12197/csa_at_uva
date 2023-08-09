@@ -5,7 +5,7 @@ function Navbar() {
     <div className="Navbar">
       <header className="navbar-header">
         <nav>
-            <img src = "Official-CSA-Square-Logo.png" alt = "Official CSA Logo" className = "logo"/>
+            <a href = "/"><img src = "Official-CSA-Square-Logo.png" alt = "Official CSA Logo" className = "logo" href = "/"/></a>
             <ul className = "navbar-list">
                 <li>
                     <a href = "/">Home</a>
