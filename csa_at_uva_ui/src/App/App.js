@@ -1,4 +1,4 @@
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Home from '../Home/Home';
 import Events from '../Events/Events';

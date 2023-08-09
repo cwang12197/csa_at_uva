@@ -1,10 +1,9 @@
 import './Home.css';
-import Navbar from '../Navbar/Navbar';
 import React, { useState, useEffect } from "react";
 import ThisWeekInCSA from '../ThisWeekInCSA/ThisWeekInCSA';
 import Newsletter from '../Newsletter/Newsletter';
 
-function Home(props) {
+function Home() {
 
     const parallax_el = document.querySelectorAll(".parallax");
     const [xVal, setXVal] = useState(0);
@@ -49,7 +48,6 @@ function Home(props) {
     }, [xVal, yVal]);
 
     return (
-        <><Navbar />
         <div className="Home">
             <main>
                 <img src="main background.png" data-speedx="0.08" data-speedy="0.1" data-speedz="0" className="parallax bg-img" alt="bg" />
@@ -73,7 +71,7 @@ function Home(props) {
             </div>
             <Newsletter />
             <ThisWeekInCSA />
-        </div></>
+        </div>
     );
 }
 

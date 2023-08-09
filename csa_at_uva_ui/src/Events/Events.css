@@ -1,0 +1,14 @@
+.events-container {
+    height: 80vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.events-container h1 {
+    color: black;
+}
+
+.events-container p {
+    color: black;
+}
