@@ -1,4 +1,6 @@
 .events-container {
+    margin-top: 5%;
+    margin-left: 2%;
     height: 80vh;
     width: 100vw;
     overflow: hidden;
