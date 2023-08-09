@@ -82,6 +82,15 @@ main {
     z-index: 50;
     color: black;
     text-align: center;
-    padding: 5%;
+    padding: 3%;
 }
 
+.member-form {
+    margin: 0 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.member-form button {
+    padding: 2.5%;
+}

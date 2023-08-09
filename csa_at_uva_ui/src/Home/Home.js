@@ -4,13 +4,6 @@ import ThisWeekInCSA from '../ThisWeekInCSA/ThisWeekInCSA';
 import Newsletter from '../Newsletter/Newsletter';
 
 function Home(props) {
-//     const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
-//     const handleNewsletterClose = () => {
-//       setIsNewsletterOpen(false);
-//     };
-//     const openNewsletter = () => {
-//       setIsNewsletterOpen(true);
-//   };
 
     const parallax_el = document.querySelectorAll(".parallax");
     const [xVal, setXVal] = useState(0);
@@ -68,12 +61,15 @@ function Home(props) {
             <div className="introduction">
                 <p>The Chinese Student Association (CSA), as one of the largest Asian-American cultural organizations on grounds, seeks to promote awareness and appreciation for traditional and modern Chinese culture within the University and greater Charlottesville community. CSA hosts an array of cultural and social events designed to reach out to and bring together both native and ethnic Chinese, as well as the non-Chinese populations of UVA, in order to share and celebrate Chinese culture.</p>
             </div>
-             <Newsletter 
-            //  openNewsletter = {openNewsletter} 
-            //  closeNewsletter={handleNewsletterClose} 
-            //  isNewsletterOpen = {isNewsletterOpen} 
-            />
-
+            <div className = "member-form">
+            <button onClick={() => window.open("https://www.tinyurl.com/oldcsa")}>
+          Returning Members Form
+        </button>
+        <button onClick={() => window.open("https://www.tinyurl.com/csanewmember")}>
+          New Members Form
+        </button>
+        </div>
+            <Newsletter />
             <ThisWeekInCSA />
         </div>
     );
