@@ -6,6 +6,5 @@
     "swr": "^2.2.0"
   },
   "devDependencies": {
-    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }

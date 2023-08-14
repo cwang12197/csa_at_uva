@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import Home from '../Home/Home';
 import Events from '../Events/Events';
 import './App.css';
+import Officers from '../Officers/Officers';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path = "/" element = {<Home />} />
           <Route path = "/events" element = {<Events />} />
+          <Route path = "/officers" element = {<Officers />} />
           </Routes>
       </header>
     </div>
