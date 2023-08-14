@@ -24,6 +24,8 @@
 }
 
 .exec-officer img{
+    border-radius: 20px;
+    transition: box-shadow .2s;
     width: 90%;
     height: 75%;
     object-fit: cover;
