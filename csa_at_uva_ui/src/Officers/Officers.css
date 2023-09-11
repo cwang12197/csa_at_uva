@@ -1,14 +1,21 @@
 .officer-container {
-    margin-top: 5%;
-    height: 100vh;
-    width: 100vw;
+    /* margin-top: 5%; */
+    margin: 5% 0;
+    /* height: 100vh;
+    width: 100vw; */
     overflow: hidden;
     position: relative;
     color: black;
+    z-index: 11;
 }
 
 .officer-container .title {
     margin-left: 2%;
+}
+
+.officer-container img {
+    border-radius: 20px;
+    transition: box-shadow .2s;
 }
 
 .exec-container {
@@ -24,9 +31,7 @@
 }
 
 .exec-officer img{
-    border-radius: 20px;
-    transition: box-shadow .2s;
-    width: 90%;
+    width: 100%;
     height: 75%;
     object-fit: cover;
     padding: 3%;
@@ -50,4 +55,19 @@
     font-weight: bold;
     font-size: 1.25rem;
     margin: 0;
+}
+
+.community-container {
+    text-align: center;
+    margin: 0 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.community-container img{
+    margin: 0;
+    width: 350px;
+    object-fit: contain;
+    
 }
