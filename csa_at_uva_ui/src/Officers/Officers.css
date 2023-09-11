@@ -61,7 +61,7 @@
     text-align: center;
     margin: 0 2%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -70,4 +70,27 @@
     width: 350px;
     object-fit: contain;
     
+}
+
+.officer-info .role {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    color: #7b1500;
+    margin: 1%;
+}
+
+.officer-info .name {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.officer-container-1 {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 2%;
+    justify-content: center;
 }

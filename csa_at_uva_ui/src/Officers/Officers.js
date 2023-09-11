@@ -35,10 +35,15 @@ function Officers() {
                     </div>
                 </div>
             </div>
+            <div className = "officer-container-1">
             <div className="community-container">
                 <img className="officer-img" src="https://storage.googleapis.com/csa-at-uva-files/officers/CommPic.jpg" alt="community" />
+                <div className="officer-info">
+                        <p className="name">Safa Khan</p>
+                        <p className="role">Secretary</p>
+                </div>
             </div>
-
+            </div>
         </div>
     );
 }
